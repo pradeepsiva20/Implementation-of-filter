@@ -31,8 +31,8 @@ Apply the Laplacian operator to the RGB image (image2) using OpenCV's cv2.Laplac
 <br>
 
 ## Program:
-### Developed By : Prajeeth K T
-### Register Number: 212222110034
+### Developed By : Pradeep S
+### Register Number: 212222100034
 </br>
 
 ### 1. Smoothing Filters
@@ -42,7 +42,7 @@ i) Using Averaging Filter
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-image1 = cv2.imread('cat.jpg')
+image1 = cv2.imread('dog.jpg')
 image2 = cv2.cvtColor(image1, cv2.COLOR_BGR2RGB)
 
 kernel = np.ones((11,11), np. float32)/121
@@ -64,7 +64,7 @@ ii) Using Weighted Averaging Filter
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-image1 = cv2.imread('cat.jpg')
+image1 = cv2.imread('dog.jpg')
 image2 = cv2.cvtColor(image1, cv2.COLOR_BGR2RGB)
 
 kernel2 = np.array([[1,2,1],[2,4,2],[1,2,1]])/16
@@ -77,7 +77,7 @@ iii) Using Gaussian Filter
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-image1 = cv2.imread('cat.jpg')
+image1 = cv2.imread('dog.jpg')
 image2 = cv2.cvtColor(image1, cv2.COLOR_BGR2RGB)
 
 gaussian_blur = cv2.GaussianBlur(src=image2, ksize=(11,11), sigmaX=0, sigmaY=0)
@@ -90,7 +90,7 @@ iv) Using Median Filter
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-image1 = cv2.imread('cat.jpg')
+image1 = cv2.imread('dog.jpg')
 image2 = cv2.cvtColor(image1, cv2.COLOR_BGR2RGB)
 
 median=cv2.medianBlur (src=image2, ksize=11)
@@ -104,7 +104,7 @@ i) Using Laplacian Kernal
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-image1 = cv2.imread('cat.jpg')
+image1 = cv2.imread('dog.jpg')
 image2 = cv2.cvtColor(image1, cv2.COLOR_BGR2RGB)
 
 kernel3 = np.array([[0,1,0], [1, -4,1],[0,1,0]])
@@ -117,7 +117,7 @@ ii) Using Laplacian Operator
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-image1 = cv2.imread('cat.jpg')
+image1 = cv2.imread('dog.jpg')
 image2 = cv2.cvtColor(image1, cv2.COLOR_BGR2RGB)
 
 new_image = cv2.Laplacian (image2, cv2.CV_64F)
@@ -130,29 +130,37 @@ plt.title('Laplacian Operator')
 
 #### i) Using Averaging Filter
 
-![image](https://github.com/user-attachments/assets/bd1c9539-4633-4d5c-a600-bc3b8ff0c427)
+![dog1](https://github.com/user-attachments/assets/9538158a-7d49-48ee-956e-4b6605fa80a8)
+
 
 #### ii) Using Weighted Averaging Filter
 
-![image](https://github.com/user-attachments/assets/d2a87725-de92-49f5-966c-cb059be0379f)
+![dog2](https://github.com/user-attachments/assets/2ee73f09-a042-443c-bc04-840d83636d76)
+
 
 #### iii) Using Gaussian Filter
 
-![image](https://github.com/user-attachments/assets/a12cd949-493b-4bc9-a47e-7882ee99deb5)
+
+![dog3](https://github.com/user-attachments/assets/0d6e5484-ceec-42b1-8aad-769f3cdb8ef8)
+
 
 #### iv) Using Median Filter
 
-![image](https://github.com/user-attachments/assets/7670fa2b-5128-4e0f-8f2d-bbcf6c9d6da5)
+![dog4](https://github.com/user-attachments/assets/c48e9b0f-59cc-4385-9f83-235f3ef8bfe6)
+
 
 ### 2. Sharpening Filters
 
 ##### i) Using Laplacian Kernal
 
-![image](https://github.com/user-attachments/assets/6ca05df7-8d45-4bad-ad5d-3bbf8a149883)
+![DOG5](https://github.com/user-attachments/assets/60c240b1-9a0a-4f7a-8566-6220d441b1e6)
+
 
 #### ii) Using Laplacian Operator
 
-![image](https://github.com/user-attachments/assets/25568d55-1bfb-47ea-8452-02cdaaa79ccd)
+![dog6](https://github.com/user-attachments/assets/75830403-6956-4e4d-9fd8-45ca1bb91974)
+
+
 
 ### Result:
 
